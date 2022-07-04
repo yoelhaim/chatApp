@@ -72,7 +72,7 @@
       const sendMsg = (e) => {
         e.preventDefault();
         let inp = document.getElementById("input");
-        if (inp) {
+        if (inp.value) {
           socket.emit("msg", inp.value);
           inp.value = "";
         }
